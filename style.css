@@ -1,0 +1,243 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  background-color: #1a181c; /* Warm, rich dark background */
+  color: #f4f4f6;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 5%;
+  background: #242028;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid #36303d;
+}
+
+.logo {
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+  /* Pastel Gradient for logo text */
+  background: linear-gradient(135deg, #ffffff 0%, #ffb3c6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: #c4bbf0;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffffff;
+}
+
+/* Hero / Portfolio Header Section */
+.hero, .portfolio-header {
+  text-align: center;
+  padding: 6rem 1rem 4rem 1rem;
+  background: radial-gradient(circle at center, #2e2836 0%, #1a181c 100%);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero h1, .portfolio-header h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 0.4rem;
+  color: #ffffff;
+}
+
+.portfolio-header .subtitle {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #ffb3c6; /* Soft pastel pink */
+  margin-bottom: 1.2rem;
+}
+
+.portfolio-header .tagline {
+  font-size: 1.05rem;
+  font-style: italic;
+  color: #ffffff;
+  margin-bottom: 0.8rem;
+}
+
+.portfolio-header .bio {
+  color: #d1c7d8;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Buttons with Soft Pastel Gradient */
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.8rem;
+  background: linear-gradient(135deg, #ffb3c6 0%, #ff85a1 100%);
+  color: #1a181c; /* Dark text on pastel button for readability */
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: 600;
+  transition: opacity 0.3s, transform 0.2s;
+  margin-top: 1.5rem;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+/* Portfolio Section */
+.portfolio-container {
+  padding: 4rem 5%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.portfolio-container h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #ffffff;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.filter-btn {
+  background: #242028;
+  border: 1px solid #36303d;
+  color: #d1c7d8;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.filter-btn:hover, .filter-btn.active {
+  background: linear-gradient(135deg, #ffb3c6 0%, #ff85a1 100%);
+  color: #1a181c;
+  border-color: #ffb3c6;
+  font-weight: 600;
+}
+
+/* Portfolio Grid */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.portfolio-item {
+  background: #242028;
+  border-radius: 8px;
+  overflow: hidden;
+  display: block;
+  border: 1px solid #36303d;
+}
+
+/* Image Gallery Grid */
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+
+.image-gallery img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.item-info {
+  padding: 1.2rem;
+}
+
+.item-info h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+  color: #ffffff;
+}
+
+.item-info p {
+  color: #d1c7d8;
+  font-size: 0.85rem;
+}
+
+/* About & Contact */
+.about-section, .contact-section {
+  padding: 4rem 5%;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-section p, .contact-section p {
+  color: #d1c7d8;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.contact-details {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.contact-item {
+  font-size: 1rem;
+  color: #ffffff;
+  background: #242028;
+  padding: 0.8rem 1.5rem;
+  border-radius: 20px;
+  border: 1px solid #36303d;
+}
+
+.contact-item a {
+  color: #ffb3c6;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 0.4rem;
+  transition: color 0.2s ease;
+}
+
+.contact-item a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #242028;
+  color: #d1c7d8;
+  font-size: 0.8rem;
+  margin-top: 3rem;
+  border-top: 1px solid #36303d;
+}
