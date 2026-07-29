@@ -9,115 +9,102 @@
 <body>
 
   <!-- Navigation Bar -->
-<nav class="navbar">
-  <div class="logo">Obra de Mio</div>
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#portfolio">Work</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
+  <nav class="navbar">
+    <div class="logo">Obra de Mio</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#portfolio">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
   <!-- HEADER SECTION -->
-<header class="portfolio-header">
-  <h1>Obra de Mio</h1>
-  <p class="subtitle">by Christine Joy Macansantos</p>
-  
-  <p class="tagline">The intersection of vision and precision — a unique perspective in every work.</p>
-  
-  <p class="bio">
-    I blend creativity and purpose in every design. From painting and sketching to photography and visual storytelling, I turn ideas into meaningful visuals that inspire and engage.
-  </p>
-</header>
+  <header class="portfolio-header">
+    <h1>Obra de Mio</h1>
+    <p class="subtitle">by Christine Joy Macansantos</p>
+    
+    <p class="tagline">The intersection of vision and precision — a unique perspective in every work.</p>
+    
+    <p class="bio">
+      I blend creativity and purpose in every design. From painting and sketching to photography and visual storytelling, I turn ideas into meaningful visuals that inspire and engage.
+    </p>
+  </header>
 
-<!-- FILTER BUTTONS -->
-<div class="filter-buttons">
-  <button class="filter-btn" onclick="filterSelection('all')">All</button>
-  <button class="filter-btn" onclick="filterSelection('dataviz')">Data Viz</button>
-  <button class="filter-btn" onclick="filterSelection('graphic')">Graphic Design</button>
-  <button class="filter-btn" onclick="filterSelection('digital')">Digital Art</button>
-  <button class="filter-btn" onclick="filterSelection('painting')">Painting</button>
-  <button class="filter-btn" onclick="filterSelection('photography')">Photography</button>
-  <button class="filter-btn" onclick="filterSelection('video')">Videography</button>
-</div>
+  <!-- PORTFOLIO SECTION -->
+  <section id="portfolio" class="portfolio-section">
+
+    <!-- FILTER BUTTONS -->
+    <div class="filter-buttons">
+      <button class="filter-btn" onclick="filterSelection('all')">All</button>
+      <button class="filter-btn" onclick="filterSelection('dataviz')">Data Viz</button>
+      <button class="filter-btn" onclick="filterSelection('graphic')">Graphic Design</button>
+      <button class="filter-btn" onclick="filterSelection('digital')">Digital Art</button>
+      <button class="filter-btn" onclick="filterSelection('painting')">Painting</button>
+      <button class="filter-btn" onclick="filterSelection('photography')">Photography</button>
+      <button class="filter-btn" onclick="filterSelection('video')">Videography</button>
+    </div>
 
     <!-- Portfolio Grid -->
     <div class="portfolio-grid">
 
       <!-- Item 1: Data Viz -->
-<div class="portfolio-item dataviz">
-  
-  <!-- START: Added image-gallery wrapper -->
-  <div class="image-gallery">
-    <img src="dashboard.jpg" alt="Data Visualization Dashboard">
-    <img src="dashboard1.jpg" alt="Withdrawal Monitoring View">
-    <img src="dashboard2.jpg" alt="Planning Performance Tracking View">
-  </div>
-  <!-- END: image-gallery wrapper -->
-  
-  <div class="item-info">
-    <h3>Complete Dashboard Suite</h3>
-    <p>Data Visualization / Excel</p>
-  </div>
-</div>
+      <div class="portfolio-item dataviz">
+        <div class="image-gallery">
+          <img src="images/dashboard.jpg" alt="Data Visualization Dashboard">
+          <img src="images/dashboard1.jpg" alt="Withdrawal Monitoring View">
+          <img src="images/dashboard2.jpg" alt="Planning Performance Tracking View">
+        </div>
+        <div class="item-info">
+          <h3>Complete Dashboard Suite</h3>
+          <p>Data Visualization / Excel</p>
+        </div>
+      </div>
 
       <!-- Item 2: Graphic Design -->
-<div class="portfolio-item graphic">
-  
-  <!-- START: Added image-gallery wrapper -->
-  <div class="image-gallery">
-    <img src="digitalart12.jpg" alt="Graphic Design Main Overview">
-    <img src="digitalart.jpg" alt="Graphic Design Detail View 1">
-    <img src="digitalart7.jpg" alt="Graphic Design Detail View 2">
-    <img src="digitalart11.jpg" alt="Graphic Design Detail View 3">
-  </div>
-  <!-- END: image-gallery wrapper -->
-  
-  <div class="item-info">
-    <h3>Brand Identity & Layout Design</h3>
-    <p>Graphic Design / Branding</p>
-  </div>
-</div>
+      <div class="portfolio-item graphic">
+        <div class="image-gallery">
+          <img src="images/digitalart12.jpg" alt="Graphic Design Main Overview">
+          <img src="images/digitalart.jpg" alt="Graphic Design Detail View 1">
+          <img src="images/digitalart7.jpg" alt="Graphic Design Detail View 2">
+          <img src="images/digitalart11.jpg" alt="Graphic Design Detail View 3">
+        </div>
+        <div class="item-info">
+          <h3>Brand Identity & Layout Design</h3>
+          <p>Graphic Design / Branding</p>
+        </div>
+      </div>
 
-     <!-- Item 3: Digital Art -->
-<div class="portfolio-item digital">
-  
-  <!-- START: Added image-gallery wrapper -->
-  <div class="image-gallery">
-    <img src="digitalart8.jpg" alt="Digital Artwork Main View">
-    <img src="digitalart1.jpg" alt="Digital Artwork Detail View 1">
-    <img src="digitalart2.jpg" alt="Digital Artwork Detail View 2">
-    <img src="digitalart3.jpg" alt="Digital Artwork Detail View 3">
-    <img src="digitalart4.jpg" alt="Digital Artwork Detail View 4">
-    <img src="digitalart9.jpg" alt="Digital Artwork Detail View 5">
-    <img src="digitalart10.jpg" alt="Digital Artwork Detail View 6">
-    <img src="digitalart6.jpg" alt="Digital Artwork Detail View 7">
-    <img src="digitalart5.jpg" alt="Digital Artwork Detail View 8">
-  </div>
-  <!-- END: image-gallery wrapper -->
-  
-  <div class="item-info">
-    <h3>Digital Concept Series</h3>
-    <p>Digital Art / Illustration</p>
-  </div>
-</div>
+      <!-- Item 3: Digital Art -->
+      <div class="portfolio-item digital">
+        <div class="image-gallery">
+          <img src="images/digitalart8.jpg" alt="Digital Artwork Main View">
+          <img src="images/digitalart1.jpg" alt="Digital Artwork Detail View 1">
+          <img src="images/digitalart2.jpg" alt="Digital Artwork Detail View 2">
+          <img src="images/digitalart3.jpg" alt="Digital Artwork Detail View 3">
+          <img src="images/digitalart4.jpg" alt="Digital Artwork Detail View 4">
+          <img src="images/digitalart9.jpg" alt="Digital Artwork Detail View 5">
+          <img src="images/digitalart10.jpg" alt="Digital Artwork Detail View 6">
+          <img src="images/digitalart6.jpg" alt="Digital Artwork Detail View 7">
+          <img src="images/digitalart5.jpg" alt="Digital Artwork Detail View 8">
+        </div>
+        <div class="item-info">
+          <h3>Digital Concept Series</h3>
+          <p>Digital Art / Illustration</p>
+        </div>
+      </div>
 
       <!-- Item 4: Painting -->
-<div class="portfolio-item painting">
-  
-  <!-- START: Added image-gallery wrapper -->
-  <div class="image-gallery">
-    <img src="painting4.jpg" alt="Oil Painting Canvas Overview">
-    <img src="painting1.jpg" alt="Painting Close-up Detail">
-    <img src="painting3.jpg" alt="Mural Painting">
-  </div>
-  <!-- END: image-gallery wrapper -->
-  
-  <div class="item-info">
-    <h3>Original Canvas Artwork</h3>
-    <p>Fine Art / Traditional Painting</p>
-  </div>
-</div>
+      <div class="portfolio-item painting">
+        <div class="image-gallery">
+          <img src="images/painting4.jpg" alt="Oil Painting Canvas Overview">
+          <img src="images/painting1.jpg" alt="Painting Close-up Detail">
+          <img src="images/painting3.jpg" alt="Mural Painting">
+        </div>
+        <div class="item-info">
+          <h3>Original Canvas Artwork</h3>
+          <p>Fine Art / Traditional Painting</p>
+        </div>
+      </div>
 
       <!-- Item 5: Videography -->
       <div class="portfolio-item video">
@@ -128,32 +115,28 @@
         </div>
       </div>
 
-     <!-- Item 6: Photography -->
-<div class="portfolio-item photography">
-  
-  <!-- START: Add this wrapping div -->
-  <div class="image-gallery">
-    <img src="photography.jpg" alt="Photography Full Shot">
-    <img src="photography5.jpg" alt="Photography Full Shot 1">
-    <img src="photography6.jpg" alt="Photography Full Shot 2">
-    <img src="photography1.jpg" alt="Photography Flower Shot">
-    <img src="photography3.jpg" alt="Photography Flower Shot 1">
-    <img src="photography4.jpg" alt="Photography Flower Shot 2">
-    <img src="photography10.jpg" alt="Macro Photography Detail 1">
-    <img src="photography8.jpg" alt="Macro Photography Detail 2">
-    <img src="photography9.jpg" alt="Macro Photography Detail 3">
-    <img src="photography11.jpg" alt="Macro Photography Detail 4">
-    <img src="photography12.jpg" alt="Moon Shot">
-    <img src="photography14.jpg" alt="Moon Shot 1">
-    <img src="photography13.jpg" alt="Moon Shot 2">
-  </div>
-  <!-- END: Closing wrapping div -->
-  
-  <div class="item-info">
-    <h3>Macro & Nature Series</h3>
-    <p>Photography / Fine Art</p>
-  </div>
-</div>
+      <!-- Item 6: Photography -->
+      <div class="portfolio-item photography">
+        <div class="image-gallery">
+          <img src="images/photography.jpg" alt="Photography Full Shot">
+          <img src="images/photography5.jpg" alt="Photography Full Shot 1">
+          <img src="images/photography6.jpg" alt="Photography Full Shot 2">
+          <img src="images/photography1.jpg" alt="Photography Flower Shot">
+          <img src="images/photography3.jpg" alt="Photography Flower Shot 1">
+          <img src="images/photography4.jpg" alt="Photography Flower Shot 2">
+          <img src="images/photography10.jpg" alt="Macro Photography Detail 1">
+          <img src="images/photography8.jpg" alt="Macro Photography Detail 2">
+          <img src="images/photography9.jpg" alt="Macro Photography Detail 3">
+          <img src="images/photography11.jpg" alt="Macro Photography Detail 4">
+          <img src="images/photography12.jpg" alt="Moon Shot">
+          <img src="images/photography14.jpg" alt="Moon Shot 1">
+          <img src="images/photography13.jpg" alt="Moon Shot 2">
+        </div>
+        <div class="item-info">
+          <h3>Macro & Nature Series</h3>
+          <p>Photography / Fine Art</p>
+        </div>
+      </div>
 
     </div>
   </section>
@@ -165,24 +148,24 @@
   </section>
 
   <!-- CONTACT SECTION -->
-<section id="contact" class="contact-section">
-  <h2>Get In Touch</h2>
-  <p class="contact-sub">Have a project in mind or want to collaborate? Feel free to reach out!</p>
-  
-  <div class="contact-details">
-    <div class="contact-item">
-      <strong>Email:</strong> 
-      <a href="mailto:abemacansantos@gmail.com">abemacansantos@gmail.com</a>
+  <section id="contact" class="contact-section">
+    <h2>Get In Touch</h2>
+    <p class="contact-sub">Have a project in mind or want to collaborate? Feel free to reach out!</p>
+    
+    <div class="contact-details">
+      <div class="contact-item">
+        <strong>Email:</strong> 
+        <a href="mailto:abemacansantos@gmail.com">abemacansantos@gmail.com</a>
+      </div>
+      <div class="contact-item">
+        <strong>Phone:</strong> 
+        <a href="tel:09975682905">09975682905</a>
+      </div>
     </div>
-    <div class="contact-item">
-      <strong>Phone:</strong> 
-      <a href="tel:09975682905">09975682905</a>
-    </div>
-  </div>
-</section>
+  </section>
 
   <footer>
-    <p>&copy; 2026 Your Name. All rights reserved.</p>
+    <p>&copy; 2026 Christine Joy Macansantos. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
