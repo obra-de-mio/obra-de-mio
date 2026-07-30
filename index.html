@@ -1,160 +1,395 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Creative Portfolio | Multi-Disciplinary Designer</title>
-  <link rel="stylesheet" href="style.css">
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Obra de Mio | Christine Joy Macansantos</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
 
-  <!-- Navigation Bar -->
-  <nav class="navbar">
-    <div class="logo">Obra de Mio</div>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#portfolio">Work</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+<!-- Navigation -->
 
-  <!-- HEADER SECTION -->
-  <header class="portfolio-header">
-    <h1>Obra de Mio</h1>
-    <p class="subtitle">by Christine Joy Macansantos</p>
-    
-    <p class="tagline">The intersection of vision and precision — a unique perspective in every work.</p>
-    
-    <p class="bio">
-      I blend creativity and purpose in every design. From painting and sketching to photography and visual storytelling, I turn ideas into meaningful visuals that inspire and engage.
+<nav class="navbar">
+
+<div class="logo">
+Obra de Mio
+</div>
+
+<ul class="nav-links">
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#portfolio">Portfolio</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<!-- HERO SECTION -->
+
+<header class="portfolio-header">
+
+<div class="hero">
+
+<div class="hero-photo">
+
+<img src="me.jpg" alt="Christine Joy Macansantos">
+
+</div>
+
+<div class="hero-text">
+
+<h1>Obra de Mio</h1>
+
+<p class="subtitle">
+by Christine Joy Macansantos
+</p>
+
+<p class="tagline">
+
+The intersection of vision and precision —
+a unique perspective in every work.
+
+</p>
+
+<p class="bio">
+
+I blend creativity and purpose in every design.
+
+From painting and sketching to photography,
+graphic design, digital art,
+and data visualization,
+
+I transform ideas into meaningful visuals that inspire, communicate, and leave a lasting impression.
+
+</p>
+
+<a href="#portfolio" class="hero-button">
+
+View My Works
+
+</a>
+
+</div>
+
+</div>
+
+</header>
+
+<!-- PORTFOLIO SECTION -->
+
+<section id="portfolio" class="portfolio-section">
+
+<h2 class="section-title">Featured Works</h2>
+
+<p class="section-subtitle">
+A collection of my creative and technical works across different disciplines.
+</p>
+
+<!-- FILTER BUTTONS -->
+
+<div class="filter-buttons">
+
+<button class="filter-btn" onclick="filterSelection('all')">All</button>
+
+<button class="filter-btn" onclick="filterSelection('dataviz')">Data Viz</button>
+
+<button class="filter-btn" onclick="filterSelection('graphic')">Graphic Design</button>
+
+<button class="filter-btn" onclick="filterSelection('digital')">Digital Art</button>
+
+<button class="filter-btn" onclick="filterSelection('painting')">Painting</button>
+
+<button class="filter-btn" onclick="filterSelection('photography')">Photography</button>
+
+<button class="filter-btn" onclick="filterSelection('video')">Videography</button>
+
+</div>
+
+<div class="portfolio-grid">
+
+<!-- DATA VISUALIZATION -->
+
+<div class="portfolio-item dataviz">
+
+<div class="image-gallery">
+
+<img class="zoom-img" src="dashboard.jpg" alt="Dashboard">
+
+<img class="zoom-img" src="dashboard1.jpg" alt="Dashboard">
+
+<img class="zoom-img" src="dashboard2.jpg" alt="Dashboard">
+
+</div>
+
+<div class="item-info">
+
+<h3>Complete Dashboard Suite</h3>
+
+<p>Data Visualization • Excel • VBA</p>
+
+</div>
+
+</div>
+
+<!-- GRAPHIC DESIGN -->
+
+<div class="portfolio-item graphic">
+
+<div class="image-gallery">
+
+<img class="zoom-img" src="digitalart12.jpg" alt="Graphic Design">
+
+<img class="zoom-img" src="digitalart.jpg.png" alt="Graphic Design">
+
+<img class="zoom-img" src="digitalart7.jpg" alt="Graphic Design">
+
+</div>
+
+<div class="item-info">
+
+<h3>Brand Identity & Layout Design</h3>
+
+<p>Graphic Design • Branding</p>
+
+</div>
+
+</div>
+
+<!-- DIGITAL ART -->
+
+<div class="portfolio-item digital">
+
+<div class="image-gallery">
+
+<img class="zoom-img" src="digitalart8.jpg" alt="Digital Art">
+
+</div>
+
+<div class="item-info">
+
+<h3>Digital Concept Series</h3>
+
+<p>Digital Illustration</p>
+
+</div>
+
+</div>
+
+<!-- PAINTING -->
+
+<div class="portfolio-item painting">
+
+<div class="image-gallery">
+
+<img class="zoom-img" src="painting4.jpg" alt="Painting">
+
+<img class="zoom-img" src="painting1.jpg" alt="Painting">
+
+<img class="zoom-img" src="painting3.jpg" alt="Painting">
+
+</div>
+
+<div class="item-info">
+
+<h3>Original Canvas Artwork</h3>
+
+<p>Traditional Painting</p>
+
+</div>
+
+</div>
+
+<!-- VIDEOGRAPHY -->
+
+<div class="portfolio-item video">
+
+<div class="image-gallery">
+
+<img class="zoom-img"
+
+src="https://via.placeholder.com/600x400?text=Showreel+Video"
+
+alt="Videography">
+
+</div>
+
+<div class="item-info">
+
+<h3>Cinematic Showreel</h3>
+
+<p>Videography & Editing</p>
+
+</div>
+
+</div>
+
+<!-- PHOTOGRAPHY -->
+
+<div class="portfolio-item photography">
+
+<div class="image-gallery">
+
+<img class="zoom-img" src="photography.jpg" alt="Photography">
+
+<img class="zoom-img" src="photography5.jpg" alt="Photography">
+
+<img class="zoom-img" src="photography6.jpg" alt="Photography">
+
+<img class="zoom-img" src="photography10.jpg" alt="Photography">
+
+<img class="zoom-img" src="photography8.jpg" alt="Photography">
+
+<img class="zoom-img" src="photography11.jpg" alt="Photography">
+
+<img class="zoom-img" src="photography12.jpg" alt="Photography">
+
+<img class="zoom-img" src="photography14.jpg.JPG" alt="Photography">
+
+<img class="zoom-img" src="photography13.jpg" alt="Photography">
+
+</div>
+
+<div class="item-info">
+
+<h3>Macro & Nature Series</h3>
+
+<p>Nature • Macro • Landscape</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+  <!-- ========================= -->
+<!-- ABOUT -->
+<!-- ========================= -->
+
+<section id="about" class="about-section">
+
+    <h2>About the Artist</h2>
+
+    <div class="about-content">
+
+        <div class="about-text">
+
+            <p>
+
+                Hello! I'm <strong>Christine Joy Macansantos</strong>, a multidisciplinary artist and Agricultural & Biosystems Engineer who enjoys blending creativity with analytical thinking.
+
+            </p>
+
+            <p>
+
+                My passion spans painting, digital illustration, graphic design, photography, videography, and data visualization. Every piece I create reflects my belief that art should communicate, inspire, and tell meaningful stories.
+
+            </p>
+
+            <p>
+
+                <em>"Obra de Mio"</em> is my personal creative space—a collection of works that represent my journey, imagination, and dedication to visual storytelling.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- CONTACT -->
+<!-- ========================= -->
+
+<section id="contact" class="contact-section">
+
+    <h2>Let's Create Together</h2>
+
+    <p class="contact-sub">
+
+        Whether it's a creative collaboration, design project, or simply to say hello, I'd love to hear from you.
+
     </p>
-  </header>
 
-  <!-- PORTFOLIO SECTION -->
-  <section id="portfolio" class="portfolio-section">
-
-    <!-- FILTER BUTTONS -->
-    <div class="filter-buttons">
-      <button class="filter-btn" onclick="filterSelection('all')">All</button>
-      <button class="filter-btn" onclick="filterSelection('dataviz')">Data Viz</button>
-      <button class="filter-btn" onclick="filterSelection('graphic')">Graphic Design</button>
-      <button class="filter-btn" onclick="filterSelection('digital')">Digital Art</button>
-      <button class="filter-btn" onclick="filterSelection('painting')">Painting</button>
-      <button class="filter-btn" onclick="filterSelection('photography')">Photography</button>
-      <button class="filter-btn" onclick="filterSelection('video')">Videography</button>
-    </div>
-
-    <!-- Portfolio Grid -->
-    <div class="portfolio-grid">
-
-      <!-- Item 1: Data Viz -->
-      <div class="portfolio-item dataviz">
-        <div class="image-gallery">
-          <img src="dashboard.jpg" alt="Data Visualization Dashboard">
-          <img src="dashboard1.jpg" alt="Withdrawal Monitoring View">
-          <img src="dashboard2.jpg" alt="Planning Performance Tracking View">
-        </div>
-        <div class="item-info">
-          <h3>Complete Dashboard Suite</h3>
-          <p>Data Visualization / Excel</p>
-        </div>
-      </div>
-
-      <!-- Item 2: Graphic Design -->
-      <div class="portfolio-item graphic">
-        <div class="image-gallery">
-          <img src="digitalart12.jpg" alt="Graphic Design Main Overview">
-          <img src="digitalart.jpg.png" alt="Graphic Design Detail View 1">
-          <img src="digitalart7.jpg" alt="Graphic Design Detail View 2">
-        </div>
-        <div class="item-info">
-          <h3>Brand Identity & Layout Design</h3>
-          <p>Graphic Design / Branding</p>
-        </div>
-      </div>
-
-      <!-- Item 3: Digital Art -->
-      <div class="portfolio-item digital">
-        <div class="image-gallery">
-          <img src="digitalart8.jpg" alt="Digital Artwork Main View">
-        </div>
-        <div class="item-info">
-          <h3>Digital Concept Series</h3>
-          <p>Digital Art / Illustration</p>
-        </div>
-      </div>
-
-      <!-- Item 4: Painting -->
-      <div class="portfolio-item painting">
-        <div class="image-gallery">
-          <img src="painting4.jpg" alt="Oil Painting Canvas Overview">
-          <img src="painting1.jpg" alt="Painting Close-up Detail">
-          <img src="painting3.jpg" alt="Mural Painting">
-        </div>
-        <div class="item-info">
-          <h3>Original Canvas Artwork</h3>
-          <p>Fine Art / Traditional Painting</p>
-        </div>
-      </div>
-
-      <!-- Item 5: Videography -->
-      <div class="portfolio-item video">
-        <img src="https://via.placeholder.com/600x400?text=Showreel+Video" alt="Videography">
-        <div class="item-info">
-          <h3>Cinematic Showreel</h3>
-          <p>Videography & Editing</p>
-        </div>
-      </div>
-
-      <!-- Item 6: Photography -->
-      <div class="portfolio-item photography">
-        <div class="image-gallery">
-          <img src="photography.jpg" alt="Photography Full Shot">
-          <img src="photography5.jpg" alt="Photography Full Shot 1">
-          <img src="photography6.jpg" alt="Photography Full Shot 2">
-          <img src="photography10.jpg" alt="Macro Photography Detail 1">
-          <img src="photography8.jpg" alt="Macro Photography Detail 2">
-          <img src="photography11.jpg" alt="Macro Photography Detail 3">
-          <img src="photography12.jpg" alt="Moon Shot">
-          <img src="photography14.jpg.JPG" alt="Moon Shot 1">
-          <img src="photography13.jpg" alt="Moon Shot 2">
-        </div>
-        <div class="item-info">
-          <h3>Macro & Nature Series</h3>
-          <p>Photography / Fine Art</p>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="about-section">
-    <h2>About Me</h2>
-    <p>I specialize in bridging analytical precision with visual storytelling. Whether structuring complex data dashboards or crafting digital illustrations and visual media, I bring an intentional, design-forward perspective to every project.</p>
-  </section>
-
-  <!-- CONTACT SECTION -->
-  <section id="contact" class="contact-section">
-    <h2>Get In Touch</h2>
-    <p class="contact-sub">Have a project in mind or want to collaborate? Feel free to reach out!</p>
-    
     <div class="contact-details">
-      <div class="contact-item">
-        <strong>Email:</strong> 
-        <a href="mailto:abemacansantos@gmail.com">abemacansantos@gmail.com</a>
-      </div>
-      <div class="contact-item">
-        <strong>Phone:</strong> 
-        <a href="tel:09975682905">09975682905</a>
-      </div>
+
+        <div class="contact-item">
+
+            <h3>Email</h3>
+
+            <a href="mailto:abemacansantos@gmail.com">
+
+                abemacansantos@gmail.com
+
+            </a>
+
+        </div>
+
+        <div class="contact-item">
+
+            <h3>Phone</h3>
+
+            <a href="tel:09975682905">
+
+                09975682905
+
+            </a>
+
+        </div>
+
     </div>
-  </section>
 
-  <footer>
-    <p>&copy; 2026 Christine Joy Macansantos. All rights reserved.</p>
-  </footer>
+</section>
 
-  <script src="script.js"></script>
+<!-- ========================= -->
+<!-- FOOTER -->
+<!-- ========================= -->
+
+<footer>
+
+    <p>
+
+        © 2026 Christine Joy Macansantos
+
+    </p>
+
+    <p>
+
+        Designed with ❤ for Obra de Mio
+
+    </p>
+
+</footer>
+
+<!-- ========================= -->
+<!-- IMAGE LIGHTBOX -->
+<!-- ========================= -->
+
+<div id="lightbox" class="lightbox">
+
+    <span class="close-lightbox">&times;</span>
+
+    <img id="lightbox-img">
+
+</div>
+
+<script src="script.js"></script>
+
 </body>
+
 </html>
